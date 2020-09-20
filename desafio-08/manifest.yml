@@ -1,0 +1,11 @@
+applications:
+  - name: maratona-cf-dayvson
+    path: .
+    command: node index.js
+    instances: 1
+    routes:
+      - route: maratona-cf-dayvson.mybluemix.net
+    random-route: true
+    memory: 128M
+    env:
+      LOCATION: 'IBM Cloud'
